@@ -1,0 +1,8 @@
+{
+  "common": {
+    "save": "Save"
+  },
+  "main": {
+    "hello": "Hello {name}!"
+  }
+}
