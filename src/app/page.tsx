@@ -1,4 +1,5 @@
 "use client";
+import { createElement } from "react";
 import { useTranslations } from "next-intl";
 
 export default function HomePage() {
@@ -6,8 +7,8 @@ export default function HomePage() {
   const m = useTranslations("main");
   return (
     <>
-      <button>{t("save")}</button>
-      <button>{m("hello", { name: "rakib" })}</button>;
+      {createElement("button", null, t("save"))}
+      {createElement("button", null, m("hello", { name: "rakib" }))}
     </>
   );
 }
